@@ -1,0 +1,13 @@
+{
+	"name": "hyvaplus/m2-module-wishlist",
+	"description": "Replace magento wishlist module",
+	"type": "magento2-module",
+	"autoload": {
+		"files": [
+			"src/registration.php"
+		],
+		"psr-4": {
+			"HyvaPlus\\Wishlist\\": "src"
+		}
+	}
+}
