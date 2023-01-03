@@ -1,13 +1,21 @@
 {
-	"name": "hyvaplus/m2-module-wishlist",
-	"description": "Replace magento wishlist module",
-	"type": "magento2-module",
-	"autoload": {
-		"files": [
-			"src/registration.php"
-		],
-		"psr-4": {
-			"HyvaPlus\\Wishlist\\": "src"
-		}
-	}
+  "name": "hyvaplus/m2-module-wishlist",
+  "description": "Replace magento wishlist module",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "HyvaPlus\\Wishlist\\": "src"
+    }
+  },
+  "require": {
+    "magento/product-community-edition": "2.4.*"
+  },
+  "replace": {
+    "magento/module-wishlist": "*",
+    "magento/module-wishlist-analytics": "*",
+    "magento/module-wishlist-graph-ql": "*"
+  }
 }
